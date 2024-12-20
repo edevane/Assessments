@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vZG-h7-AKY" customClass="FeaturedCollectionViewCell" customModule="Assesment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Duf-2I-Fen">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yPF-zL-gvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U75-s2-4P0">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1XR-7Q-XnB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-bB-1fG">
+                                <rect key="frame" x="50" y="228" width="100" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="INc-Dg-PnH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yPF-zL-gvQ" firstAttribute="leading" secondItem="Duf-2I-Fen" secondAttribute="leading" id="2Lo-7k-Yxt"/>
+                    <constraint firstAttribute="trailing" secondItem="yPF-zL-gvQ" secondAttribute="trailing" id="O8d-Xp-fep"/>
+                    <constraint firstAttribute="bottom" secondItem="yPF-zL-gvQ" secondAttribute="bottom" id="h2w-nF-FxP"/>
+                    <constraint firstItem="yPF-zL-gvQ" firstAttribute="top" secondItem="Duf-2I-Fen" secondAttribute="top" id="od5-P9-6ZF"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="catBreedLabel" destination="Goi-bB-1fG" id="x93-4x-uJW"/>
+                <outlet property="catImageView" destination="U75-s2-4P0" id="9Jr-aE-Ndh"/>
+            </connections>
+            <point key="canvasLocation" x="-69" y="9"/>
+        </collectionViewCell>
+    </objects>
+</document>

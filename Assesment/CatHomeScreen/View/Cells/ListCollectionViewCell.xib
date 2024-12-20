@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="z8R-5w-ZYd" customClass="ListCollectionViewCell" customModule="Assesment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9dm-2K-lDk">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Csa-55-Rx3">
+                        <rect key="frame" x="0.0" y="5" width="400" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fWC-Fj-oWj">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="E5v-bp-Qww"/>
+                                    <constraint firstAttribute="height" constant="70" id="Tem-tr-dW1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4r8-AG-NdE">
+                                <rect key="frame" x="78" y="0.0" width="322" height="70"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cQU-II-7Wp"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Csa-55-Rx3" firstAttribute="leading" secondItem="9dm-2K-lDk" secondAttribute="leading" id="HnJ-fK-JXc"/>
+                    <constraint firstAttribute="trailing" secondItem="Csa-55-Rx3" secondAttribute="trailing" id="bR8-22-bXa"/>
+                    <constraint firstItem="Csa-55-Rx3" firstAttribute="centerX" secondItem="9dm-2K-lDk" secondAttribute="centerX" id="cH6-W9-DFh"/>
+                    <constraint firstItem="Csa-55-Rx3" firstAttribute="centerY" secondItem="9dm-2K-lDk" secondAttribute="centerY" id="tlA-EO-Zwo"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="animalImageView" destination="fWC-Fj-oWj" id="qIC-aO-IaQ"/>
+                <outlet property="verticalStackView" destination="4r8-AG-NdE" id="YaO-yy-ara"/>
+            </connections>
+            <point key="canvasLocation" x="-913" y="-118"/>
+        </collectionViewCell>
+    </objects>
+</document>
