@@ -191,10 +191,17 @@ extension CatViewController: UICollectionViewDelegate, UICollectionViewDataSourc
         guard let viewModel else {
             return 0
         }
+
+        var sectionCount = 1
         if viewModel.searchResult.count > 0 {
-            return CatCollectionViewLayout.allCases.count
+            sectionCount += 1
         }
-        return 2
+
+        if viewModel.favouritedCats.count > 0 {
+            sectionCount += 1
+        }
+
+        return sectionCount
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
