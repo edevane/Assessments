@@ -26,7 +26,6 @@ class CatViewModel: CatViewModelContract {
     public func fetchCat() async {
         if let cats = try? await self.catService.getData(limit: defaultLimit) {
             self.dataSource = cats
-            print("Stored \(dataSource.count) cat data in dataSource")
         }
     }
 
